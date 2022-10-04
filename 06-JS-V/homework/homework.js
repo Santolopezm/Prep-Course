@@ -43,10 +43,11 @@ function agregarStringInvertida() {
 
     String.prototype.reverse = function() {
         var palabraInvertida = '';
-        for (let i = this.length; i != 0; i--) {
-            palabraInvertida += this.charAt(i - 1);
+        for (let i = this.length - 1; i >= 0; i--) {
+            palabraInvertida += this.charAt(i);
         }
         return palabraInvertida;
+
     }
 
 }
